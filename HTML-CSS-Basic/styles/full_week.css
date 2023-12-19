@@ -1,0 +1,100 @@
+body {
+  margin: 45px;
+}
+
+header {
+  margin: 45px, auto, 30px, auto;
+}
+
+main {
+  font-family: "Merriweather", serif;
+  margin: 50px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 40px auto 0px auto;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 5px;
+}
+
+p {
+  font-family: "Oawald", sans-serif;
+  margin : 5px;
+
+}
+
+li {
+  list-style: none;
+  font-size: 28px;
+  margin: 5px auto 5px auto;
+  padding: 5px;
+  border-radius: 7px;
+  
+}
+
+ol {
+  width: 500px;
+  list-style: square;
+  color: #7eaee2;
+  margin: 24px auto 24px 12px; /* top right bottom left */
+  padding: 5px;
+}
+
+ul {
+  width: 500px;
+  list-style: none;
+  color: #507ba8;
+  margin: 24px 12px 24px auto; /* 위아래 옆 */
+  padding: 5px;
+}
+
+a {
+  color: #b5e6f4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7fa0a9;
+  text-decoration: underline;
+}
+
+.olcursor:hover {
+  background-color: #507ba8;
+  border: 1px solid #7eaee2;
+  box-shadow: 5px 3px;
+}
+
+.ulcursor:hover {
+  background-color: #7eaee2;
+  border: 1px solid #507ba8;
+  box-shadow: 5px 3px;
+}
+
+#box {
+  padding: 12px 48px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#box:hover {
+  background-color: #b5e6f4;
+  text-decoration: wavy;
+  border: 1px solid #b5e6f4;
+  box-shadow: 5px 3px;
+}
+
+main p {
+    margin: 12px;
+}
+
+.daily-goal {  font-family: "Merriweather", serif;
+    color: #1c5fa5;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0px;
+    margin: 30px;
+}

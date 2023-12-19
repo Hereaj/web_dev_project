@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="styles/restaurants.css" />
+  </head>
+  <body>
+    <%- include("includes/header") %>
+    <%- include("includes/sideDrawer") %>
+    <main>
+      <h1>Recommended restaurants</h1>
+      <% if (numberOfRestaurants === 0) { %> 
+        <h2>We are sorry.</h2>
+        <p>Unfortunatly, there is no restaurant you provide to recommend.</p>
+        <% } else { %>
+      <p>Find your next favorite restaurants with help of our other users!</p>
+      <p>
+        We found <%= numberOfRestaurants %> places from your recommendation!
+      </p>
+      <form action="/restaurants" method="GET">
+        <input type="hidden" value="<%= nextOrder %>" name="order">
+        <button class="btn">Change Order</button>
+      </form>
+      <ul id="restaurants-list">
+        <% for (const restaurant of restaurants) { %>
+        <%- include("includes/restaurant/restaurant-item", {restaurant: restaurant}) %> <!-- key : value -->
+        <% } %>
+      </ul>
+      <% } %>
+    </main>
+  </body>
+</html>

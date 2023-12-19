@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="practiceStyle.css" />
+    <title>Forms Chanllenge</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <form action="/" method="GET">
+      <section>
+        <h2>How can we help you?</h2>
+        <ul>
+          <li>
+            <label for="user-name">Your Name</label>
+            <input type="text" name="username" id="user-name" required/>
+          </li>
+          <li>
+            <label for="user-email">Your E-Mail Address</label>
+            <input type="email" name="useremail" id="user-email" required/>
+          </li>
+          <li>
+            <label for="user-contact">Your Phone Number</label>
+            <input type="tel" name="usercontact" id="user-contact" required minlength="10"/>
+          </li>
+          <li>
+            <label for="user-message">Your Messsage</label>
+            <textarea name="usermessage" id="user-message" rows="6" required minlength="10" maxlength="100"></textarea>
+          </li>
+          <li>
+            <label for="user-from">How did you find us?</label>
+            <select id="user-from" name="userfrom" required>
+              <option value="web">Web Search</option>
+              <option value="friend">Friends</option>
+              <option value="mobile">E-mail / SMS</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How should we reply?</h2>
+        <ul>
+          <li class="replybox">
+            <input type="radio" name="userreply" id="call-me" value="phone" required/>
+            <label for="call-me">Call me</label>
+          </li>
+          <li class="replybox">
+            <input type="radio" name="userreply" id="email-me" value="email" required/>
+            <label for="email-me">Send me an email</label>
+          </li>
+          <li class="replybox">
+            <input type="radio" name="userreply" id="donotreply" value="dont" required/>
+            <label for="donotreply">Do not reply</label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="replybox">
+          <input type="checkbox" name="term" id="user-term" required/>
+          <label for="user-term">Accept Terms</label>
+      </section>
+
+      <section id="boxbox">
+        <button class="btn-empty" type="reset">Clear</button>
+        <button class="btn-filled">Sumbit</button>
+      </section>
+    </form>
+  </body>
+</html>

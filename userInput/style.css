@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(30,30,30);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(255,255,255);
+    padding: 1rem;
+    border-radius: 6px;
+    align-items: center;
+}
+
+label {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input, textarea, select {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(184,184,184);
+    padding: 0.25rem;
+    color: rgb(61,58,58);
+}
+
+input:focus, textarea:focus {
+    background-color: rgb(219,190,253);
+    color: rgb(71, 32, 115);
+    border-color: rgb(71, 32, 115);
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: block;
+    font: inherit;
+    background-color: rgb(71, 32, 115);
+    color: white;
+    border: 1px solid rgb(71, 32, 115);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(164, 141, 190);
+    border-color: rgb(164, 141, 190);
+}
+
+.verifybox {
+    display: flex;
+
+}
+
+.verifybox input {
+    width: auto;
+    margin-right: 0.5rem; 
+}

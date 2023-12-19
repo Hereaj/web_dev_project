@@ -1,0 +1,17 @@
+#carouselExample {
+    width: 100%;
+    max-width: 50rem;
+    height: 30rem;
+    margin: 3.5rem auto;
+    
+}
+
+#carouselExample img {
+    height: 30rem;
+    object-fit: cover;
+}
+
+#newlattersignup {
+    max-width: 30rem;
+    margin: 4rem auto;
+}

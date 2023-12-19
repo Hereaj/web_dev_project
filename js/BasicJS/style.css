@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(32, 32, 32);
+  font-family: sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+form {
+  width: 90%;
+  max-width: 50rem;
+  margin: 2rem auto;
+  background-color: rgb(255, 255, 169);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.control {
+  margin-bottom: 1rem;
+}
+
+input {
+  font: inherit;
+  width: 60%;
+  margin-right: 1rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  border: 1px solid rgb(142, 142, 38);
+  background-color: rgb(142, 142, 38);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(104, 104, 1);
+  color: rgb(211, 211, 211);
+}
+
+#charcount {
+  color: rgb(105, 101, 75);
+}
+
+input.warning {
+  background-color: rgb(248, 191, 145);
+}
+
+#changingNum.warning {
+  color: rgb(211, 109, 26);
+}
+
+input.error {
+  background-color: rgb(240, 45, 45);
+}
+
+#changingNum.error {
+  color: rgb(211, 54, 26);
+}

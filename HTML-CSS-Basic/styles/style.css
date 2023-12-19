@@ -1,0 +1,51 @@
+
+/*   이미지는 화이트엘레먼트이기 때문에 텍스트로 정렬해도 정렬 X
+  그래서 이미지가 들어있는 body를 정렬 */
+
+img {
+  width: 648px;
+  height: 432px;
+  border-radius: 3px;
+  border: 2px solid #1c5fa5;
+  margin: -80px auto 30px auto;
+}
+
+h1 {
+  font-family: "Anton", sans-serif; /* if server could not find existing fonts, find next one next comma */
+  color: #318ed5;
+}
+
+p {
+  font-family: "Playfair Display", sans-serif;
+  color: #4A6EA7;
+}
+
+#main-section {
+  width: 800px;
+  margin: 100px auto 72px auto;
+  background-color: #1b1f26;
+  padding: 20px;
+  border: 2px solid #1c5fa5;
+  border-radius: 8px;
+  box-shadow: 5px 3px 6px rgba(100,100,100,1.5);
+}
+
+#cursor {
+  color: #B5E6F4;
+  text-decoration: none;
+}
+#cursor:hover {
+  color: #7FA0A9;
+  text-decoration: underline;
+}
+
+#today-challenge {
+  color: #1c5fa5;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+#date {
+  color: #82bce8;
+}
+ 
